@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root  {
+    --txt-very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --txt-soft-red: hsl(14, 88%, 65%);
+
+    --txt-very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --txt-dark-grayish-blue: hsl(240, 6%, 50%);
+
+    --bg-soft-violet: hsl(273, 75%, 66%);
+    --bg-soft-blue: hsl(240, 73%, 65%);
+
+    --dvd-light-grayish-blue: hsl(240, 5%, 91%);
+}
+
+body {
+    font-family: "Kumbh Sans", "sans-serif";
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #af67e9 0%, #6565e7 100%);
+}
+.image-container {
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 120% 60%;
+}
+.woman {
+    display: block;
+    transform: translateX(-20%) translateY(25%);
+    object-fit: cover;
+    object-position: 100% 100%;
+}
+.cropper {
+    min-height: 100%;
+    overflow:hidden;
+}
+.cube {
+    display: block;
+    transform: translateY(-175%) translateX(-55%);
+}
+.faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 5rem;
+    padding-bottom: 3rem;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: #fff;
+    border-radius: 1rem;
+    max-width: 100vh;
+}
+.header {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--txt-very-dark-desaturated-blue)
+}
+.questions {
+    margin-right: 2rem;
+}
+.question-container {
+    border-bottom: 1px solid hsla(240, 6%, 50%, 0.19);
+    padding: 0.5rem 0 1rem 0;
+}
+.question:hover {
+    color: var(--txt-soft-red);
+    cursor: pointer;
+}
+.question:active {
+    color: var(--txt-soft-red);
+}
+.question-active {
+    color: var(--txt-soft-red);
+}
+.question {
+    font-weight: 400;
+    font-size: 0.85rem;
+    display: flex;
+    justify-content: space-between;
+    color: var(--txt-very-dark-grayish-blue);
+    transition: 0.3s;
+}
+.arrow {
+    align-self: center;
+}
+.answer {
+    display: none;
+    color: var(--txt-dark-grayish-blue)
+}
+
+.attribution {
+    position: absolute;
+    left: 0;
+    min-width: 100%;
+    bottom: 0;
+    font-size: 11px; text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
